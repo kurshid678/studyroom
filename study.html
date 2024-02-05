@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+<title>B.sc 5th semister</title>
+<style>
+body{
+width: 100vw;
+height: 100vh;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+justify-content: space-between;
+}
+.full{
+width: 90%;
+height: 90%;
+background-color: rgb(255, 226, 189);
+display: grid;
+grid-template-columns: 79% 20%;
+gap: 1%;
+border-radius: 10px;
+
+}
+.fu{
+  background: linear-gradient(to right,rgb(255, 125, 125),rgb(158, 154, 154),rgb(103, 238, 175)); 
+  border: 2px outset ;
+  border-radius: 10px;
+  
+}
+
+.header{
+width: 90%;
+height: 10%;
+background-color: black;
+margin-bottom: 10px;
+border-radius: 10px;
+color: azure;
+}
+.hidden {
+            display: none;
+            width: 100%;
+            height: 100%;
+            
+        }
+.but{
+margin-left: 30px;
+width: 80%;
+height: 8%;
+background-color: rgb(255, 144, 53);
+color: azure;
+border-radius: 8px;
+
+}
+.one{
+    margin-bottom: 10px;
+}
+.two{
+    margin-bottom: 10px;
+}
+.note1{
+    margin-bottom: 10px;
+    background-color: rgb(51, 136, 175);
+}
+.note2{
+    margin-bottom: 10px;
+    background-color: rgb(51, 136, 175);
+}
+.note3{
+    margin-bottom: 10px;
+    background-color: rgb(51, 136, 175);
+}
+.note4{
+    margin-bottom: 10px;
+    background-color: rgb(51, 136, 175);
+}
+.note5{
+    margin-bottom: 10px;
+    background-color: rgb(51, 136, 175);
+}
+.sa:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 45, 66);
+}
+</style>
+</head>
+<body>
+<div class="header"> <h1>Study Room</h1></div>
+<div class="full">
+
+<div class="fu con">
+    <div id="division1" class="hidden">
+        <iframe width="99%" height="99%" frameborder="5" src="chem.pdf"></iframe>
+    </div>
+    
+    <div id="division2" class="hidden">
+       <a href="complete heterocyclic chapter .pdf"> <button class="but note1 sa">complete heterocyclic chapter</button></a>
+       <a href="d block elements .pdf"> <button class="but note2 sa">d block elements</button></a>
+       <a href="F Block Elements .pdf"> <button class="but note3 sa ">f block elements</button></a>
+       <a href="Paper-2,Unit-4,IR Spectroscopy.pdf"> <button class="but note4 sa">IR Spectroscopy</button></a>
+       <a href="Paper-II Unit-IV, Mass Spectrometry.pdf"> <button class="but note5 sa">Mass Spectrometry</button></a>
+    </div>
+    <div id="division3" class="hidden">
+        <h2>Division 3 Content</h2>
+        <p>This is the content of Division 3.</p>
+    </div>
+
+</div>
+<div class="fu sw">
+
+    <button class="but one"  onclick="showDiv1()">Syllabus chemistry</button>
+    <button class="but two"  onclick="showDiv2()">Notes</button>
+    <button class="but three"  onclick="showDiv3()">Show Division 3</button>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function showDiv1() {
+            document.getElementById('division1').style.display = 'block';
+            document.getElementById('division2').style.display = 'none';
+            document.getElementById('division3').style.display = 'none';
+        }
+    
+        function showDiv2() {
+            document.getElementById('division1').style.display = 'none';
+            document.getElementById('division2').style.display = 'block';
+            document.getElementById('division3').style.display = 'none';
+        }
+        function showDiv3() {
+            document.getElementById('division1').style.display = 'none';
+            document.getElementById('division2').style.display = 'none';
+            document.getElementById('division3').style.display = 'block';
+        }
+    </script>
+    
+</body>
+
+
+
+
+</html>
